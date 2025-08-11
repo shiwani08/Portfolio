@@ -15,24 +15,28 @@ import "../styles/About.css";
 export default function About() {
   useEffect(() => {
     const track = document.querySelector(".marquee-track");
-    let speed = 20;
+    if (!track) return;
 
+    let speed = 20; // base speed (lower is faster)
+    
     const updateAnimation = () => {
       track.style.animation = `marquee ${speed}s linear infinite`;
     };
 
     updateAnimation();
 
+    // Handler specifically adjusts speed of the marquee track on mousemove only
     const handleMouseMove = (e) => {
       const percentage = e.clientX / window.innerWidth;
       speed = 5 + percentage * 30;
       updateAnimation();
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    track.parentElement.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      if (track.parentElement)
+        track.parentElement.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
