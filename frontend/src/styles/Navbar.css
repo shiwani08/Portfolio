@@ -1,9 +1,10 @@
 .navbar {
-  background-color: #222;
+  background: linear-gradient(90deg, #000428, #004e92); /* black → blue gradient */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* subtle depth */
 }
 
 .navbar ul {
@@ -14,8 +15,10 @@
 }
 
 .logo {
-  color: white; /* make logo text white */
+  color: #e0f7ff; /* lighter tone for better contrast */
   margin: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .navbar li {
@@ -23,11 +26,29 @@
 }
 
 .navbar a {
-  color: white;
+  color: #e0f7ff;
   text-decoration: none;
   font-weight: 500;
+  position: relative; /* for underline positioning */
+  transition: transform 0.2s ease;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* start from center */
+  bottom: -4px; /* space below text */
+  width: 0;
+  height: 2px;
+  background-color: #e0f7ff;
+  transition: all 0.3s ease;
+  transform: translateX(-50%); /* keep centered */
 }
 
 .navbar a:hover {
-  color: #00a2ff;
+  transform: scale(1.5);
+}
+
+.navbar a:hover::after {
+  width: 100%; /* expand to full width */
 }

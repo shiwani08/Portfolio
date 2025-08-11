@@ -1,13 +1,40 @@
 .home-container {
   text-align: center;
   padding: 2rem;
+  margin-top: -90px;
 }
 
 .profile-img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin-bottom: 1rem;
+  margin-bottom: 0; /* removed space */
+}
+
+.animated-roles-container {
+  font-family: "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #82c7ff;
+  margin-bottom: 0.5rem; /* reduced space */
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  user-select: none;
+  /* text-transform: uppercase; */
+}
+
+/* Rest remains same */
+.static-text {
+  color: #d1e8ff;
+}
+
+.animated-text {
+  color: #00a2ff;
+  font-weight: 700;
+  min-width: 130px;
+  display: inline-block;
+  text-transform: capitalize;
 }
 
 .fade-slide {

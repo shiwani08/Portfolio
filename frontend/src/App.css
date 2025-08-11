@@ -1,10 +1,77 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0d1b2a, #000000); /* blue to black */
+  color: #e0e6ed; /* soft white for text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  margin-bottom: 2rem; /* space below navbar */
+  position: relative; /* if needed for stacking */
+  z-index: 10; /* keep it on top */
+}
+
+html {
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #0d1b2a, #000000);
+}
+
+section {
+  min-height: 100vh; /* Full-screen height for each section */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  animation: float 12s ease-in-out infinite;
+}
+
+.bg-orb.blue {
+  background: #2196f3;
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: -100px;
+}
+
+.bg-orb.cyan {
+  background: #00e5ff;
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  right: -150px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) }
+  50% { transform: translateY(-30px) }
+}
+
+h1, h2, h3 {
+  color: #f0f4f8; /* bright white */
+}
+
+p {
+  color: #b0c7d6; /* light gray-blue for softer paragraphs */
+}
+
+ul li {
+  color: #d1e0ee; /* light tone for list items */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +81,22 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: transparent; /* Let gradient show through */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #4fc3f7; /* light blue */
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #82e9de; /* aqua hover effect */
 }
 
 @keyframes App-logo-spin {
