@@ -1,0 +1,33 @@
+.navbar {
+  background-color: #222;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none; /* remove bullet points */
+  display: flex;    /* horizontal layout */
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  color: white; /* make logo text white */
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #00a2ff;
+}
