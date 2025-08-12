@@ -25,7 +25,7 @@ export default function Home() {
         transition={{ duration: 1 }}
       >
         <img src={profileImg} alt="Profile" className="profile-img" />
-        <h1>Hi, I'm Shiwani</h1>
+        <h1 className="name">Hi, I'm Shiwani</h1>
       </motion.div>
 
       {/* RIGHT SIDE */}

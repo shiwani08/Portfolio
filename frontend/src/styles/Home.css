@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .home-container {
   display: flex;
   align-items: center;
@@ -5,8 +7,15 @@
   gap: 20rem;
   padding: 2rem;
   margin-top: -90px;
+  min-height: 100vh;
+  min-width: 100vw;
   text-align: left; 
+  background: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXBtOGkzNWoyajZmeWE0cXYwaDB6cnpnbzB0YXNzcDY0bWFldHlndSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTnxpQ3ghPiB2Hp6/giphy.gif") no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
 }
+
+
 
 .home-left {
   display: flex;
@@ -52,6 +61,13 @@
 
 .static-text {
   color: #d1e8ff;
+}
+
+.name {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
 .animated-text {

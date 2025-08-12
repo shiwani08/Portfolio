@@ -9,6 +9,7 @@ import {
   SiHtml5,
   SiCss3,
   SiGit,
+  SiFlutter
 } from "react-icons/si";
 import "../styles/About.css";
 
@@ -55,6 +56,9 @@ export default function About() {
           <div className="marquee-track">
             <div className="tech-item">
               <SiJavascript /> JavaScript
+            </div>
+            <div className="tech-item">
+              <SiFlutter /> Flutter
             </div>
             <div className="tech-item">
               <SiReact /> React
