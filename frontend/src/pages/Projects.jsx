@@ -19,7 +19,7 @@ export default function Projects() {
         className="project-card"
         onClick={() => handleCardClick("https://github.com/shiwani08/Booked")}
       >
-        <h2>Booked</h2>
+        <h2 className="project-title">Booked</h2>
         <p>Tools & Tech Stack: React.js, CSS, Framer Motion</p>
       </div>
 
@@ -29,7 +29,7 @@ export default function Projects() {
           handleCardClick("https://github.com/shiwani08/ProjectVirtualMouse")
         }
       >
-        <h2>Virtual Mouse</h2>
+        <h2 className="project-title">Virtual Mouse</h2>
         <p>Tools & Tech Stack: Python</p>
       </div>
     </motion.div>

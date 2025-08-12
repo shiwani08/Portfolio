@@ -35,7 +35,7 @@ export default function App() {
       <section id="projects">
         <Projects />
       </section>
-      <section id="contact">
+      <section id="contact" className="footer">
         <Contact />
       </section>
     </>

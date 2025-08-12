@@ -2,18 +2,16 @@
   background: linear-gradient(to top, #000000, #0d1b2a);
   color: #a8c7ff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 2rem 1rem;
+  padding: 0;       /* remove all padding */
+  margin: 0;
   text-align: center;
-  /* position: fixed; */
-  bottom: 0;
   width: 100%;
   box-shadow: 0 -3px 10px rgba(0, 162, 255, 0.4);
-  z-index: 10;
 }
 
 .contact-container h1 {
   font-size: 1.8rem;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   /* padding-bottom: 1rem; */
   color: #00a2ff;
 }
@@ -66,4 +64,13 @@
 .contact-container a:hover {
   color: #00a2ff;
   text-decoration: underline;
+}
+
+.page-ending {
+  color: white; /* white text */
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

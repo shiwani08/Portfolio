@@ -1,16 +1,25 @@
 .projects-container {
   max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: auto;
+  padding: 2rem;
   color: #cce4ff; /* softer light blue tone */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* responsive grid */
+  gap: 1.8rem;
 }
 
 .projects-container h1 {
+  grid-column: 1 / -1;
   text-align: center;
   font-size: 2.8rem;
   margin-bottom: 2rem;
   color: #a8c7ff; /* bright blue accent */
+}
+
+.project-title {
+  text-align: left;
+  margin: auto
 }
 
 .project-card {

@@ -116,12 +116,12 @@ export default function About() {
             </div>
           </div>
         </div>
-      </motion.div>
-      <div className="resume-container">
+        <div className="resume-container">
         <a href="/resume.pdf" download className="resume-button">
           📄 Download Resume
         </a>
       </div>
+      </motion.div>
     </>
   );
 }
