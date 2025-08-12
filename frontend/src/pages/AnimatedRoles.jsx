@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const roles = ["developer", "vlogger", "graphics designer"];
+const roles = ["developer", "vlogger", "graphics designer", "content creator"];
 
 export default function AnimatedRoles() {
   const [index, setIndex] = useState(0);

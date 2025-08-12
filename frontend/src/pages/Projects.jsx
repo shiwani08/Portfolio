@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import "../styles/Projects.css";
 
 export default function Projects() {
+  const handleCardClick = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <motion.div
       className="projects-container"
@@ -12,16 +15,22 @@ export default function Projects() {
     >
       <h1>Projects</h1>
 
-      <div className="project-card">
-        <h2>Portfolio Website</h2>
+      <div
+        className="project-card"
+        onClick={() => handleCardClick("https://github.com/shiwani08/Booked")}
+      >
+        <h2>Booked</h2>
         <p>Tools & Tech Stack: React.js, CSS, Framer Motion</p>
-        <blockquote>"Really sleek and professional!" – Jane Doe</blockquote>
       </div>
 
-      <div className="project-card">
-        <h2>Task Manager App</h2>
-        <p>Tools & Tech Stack: MERN Stack (MongoDB, Express, React, Node)</p>
-        <blockquote>"Helped me stay productive every day!" – John Smith</blockquote>
+      <div
+        className="project-card"
+        onClick={() =>
+          handleCardClick("https://github.com/shiwani08/ProjectVirtualMouse")
+        }
+      >
+        <h2>Virtual Mouse</h2>
+        <p>Tools & Tech Stack: Python</p>
       </div>
     </motion.div>
   );

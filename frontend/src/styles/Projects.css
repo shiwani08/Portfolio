@@ -20,6 +20,7 @@
   margin-bottom: 1.8rem;
   box-shadow: 0 0 10px rgba(0, 162, 255, 0.3); /* consistent with timeline glow */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
 .project-card:hover {

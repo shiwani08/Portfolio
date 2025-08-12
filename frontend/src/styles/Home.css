@@ -1,30 +1,55 @@
 .home-container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
   padding: 2rem;
   margin-top: -90px;
+  text-align: left; 
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1rem;
+}
+
+.home-right {
+  max-width: 600px;
+}
+
+.profile-section {
+  text-align: center;
+  margin: 20px 0;
 }
 
 .profile-img {
+  width: 450px; 
+  height: 450px; 
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 0; /* removed space */
+  object-fit: cover;
+  margin-bottom: 10px;
+
+}
+
+.profile-section p {
+  font-size: 1.4rem; 
+  font-weight: 500;
+  margin-top: 5px;
 }
 
 .animated-roles-container {
   font-family: "Times New Roman", serif;
-  font-size: 1.8rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: #82c7ff;
-  margin-bottom: 0.5rem; /* reduced space */
+  margin-bottom: 0.5rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 0.4rem;
-  user-select: none;
-  /* text-transform: uppercase; */
 }
 
-/* Rest remains same */
 .static-text {
   color: #d1e8ff;
 }
@@ -37,19 +62,8 @@
   text-transform: capitalize;
 }
 
-.fade-slide {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlideUp 0.8s ease forwards;
-}
-
-.fade-slide.delay {
-  animation-delay: 0.4s;
-}
-
-@keyframes fadeSlideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.home-intro {
+  font-size: 1.13rem;
+  color: #d1e8ff;
+  line-height: 1.5;
 }

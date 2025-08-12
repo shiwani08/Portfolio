@@ -19,24 +19,6 @@ function AnimatedRoles() {
 
     return () => clearInterval(interval);
   }, []);
-
-  return (
-    <div className="animated-roles-container">
-      <span className="static-text">I am a </span>
-      <AnimatePresence mode="wait">
-        <motion.span
-          key={roles[index]}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.5 }}
-          className="animated-text"
-        >
-          {roles[index]}
-        </motion.span>
-      </AnimatePresence>
-    </div>
-  );
 }
 
 export default function App() {
