@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import "../styles/Contact.css";
 
 export default function Contact() {
   return (
@@ -10,10 +12,17 @@ export default function Contact() {
       transition={{ duration: 0.8 }}
     >
       <h1>Contact Me</h1>
-      <p>Name: Your Name</p>
-      <p>Email: your.email@example.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">linkedin.com/in/yourusername</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">github.com/yourusername</a></p>
+      <div className="contact-icons">
+        <a href="mailto:your.email@example.com" aria-label="Email" target="_blank" rel="noreferrer">
+          <FaEnvelope />
+        </a>
+        <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+          <FaLinkedin />
+        </a>
+        <a href="https://github.com/yourusername" aria-label="GitHub" target="_blank" rel="noreferrer">
+          <FaGithub />
+        </a>
+      </div>
     </motion.div>
   );
 }

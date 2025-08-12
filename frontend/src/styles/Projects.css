@@ -2,7 +2,7 @@
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
-  color: #e0e6ed;
+  color: #cce4ff; /* softer light blue tone */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -10,33 +10,33 @@
   text-align: center;
   font-size: 2.8rem;
   margin-bottom: 2rem;
-  color: #00a2ff;
+  color: #a8c7ff; /* bright blue accent */
 }
 
 .project-card {
-  background: rgba(0, 162, 255, 0.1);
+  background: rgba(0,0,0,0.3); /* a bit lighter for better contrast */
   border-radius: 12px;
   padding: 1.5rem 2rem;
   margin-bottom: 1.8rem;
-  box-shadow: 0 4px 8px rgba(0, 162, 255, 0.15);
+  box-shadow: 0 0 10px rgba(0, 162, 255, 0.3); /* consistent with timeline glow */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 162, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 162, 255, 0.5);
   transform: translateY(-5px);
 }
 
 .project-card h2 {
   margin-bottom: 0.6rem;
-  color: #82c7ff;
+  color: #88bfff; /* lighter blue */
   font-size: 1.8rem;
 }
 
 .project-card p {
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: #b0c7d6;
+  color: #a8c7ff; /* softer text color */
 }
 
 .project-card blockquote {

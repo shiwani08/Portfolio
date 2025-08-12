@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { 
-  SiJavascript, 
-  SiReact, 
-  SiNodedotjs, 
-  SiMongodb, 
-  SiExpress, 
-  SiHtml5, 
-  SiCss3, 
-  SiGit 
+import {
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiMongodb,
+  SiExpress,
+  SiHtml5,
+  SiCss3,
+  SiGit,
 } from "react-icons/si";
 import "../styles/About.css";
 
@@ -18,7 +18,7 @@ export default function About() {
     if (!track) return;
 
     let speed = 20; // base speed (lower is faster)
-    
+
     const updateAnimation = () => {
       track.style.animation = `marquee ${speed}s linear infinite`;
     };
@@ -86,6 +86,7 @@ export default function About() {
           <div className="timeline-content">
             <h3>Software Developer at CodeClouds</h3>
             <p>Focused on full-stack web development and scalable solutions.</p>
+            <p className="timeline-date">Mar' 25 - Present</p>
           </div>
         </div>
         <div className="timeline-item">
@@ -93,6 +94,7 @@ export default function About() {
           <div className="timeline-content">
             <h3>Software Developer Intern at CodeClouds</h3>
             <p>Worked on Flutter to make hybrid mobile apps.</p>
+            <p className="timeline-date">Aug' 24 - Feb' 25</p>
           </div>
         </div>
       </div>
@@ -104,9 +106,9 @@ export default function About() {
           <div className="timeline-content">
             <h3>MCKV Institute of Engineering</h3>
             <p>Bachelor's in Technology - Information Technology</p>
+            <p className="timeline-date">Sept' 21 - Jun' 25</p>
           </div>
         </div>
-        
       </div>
     </motion.div>
   );

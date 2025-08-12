@@ -4,18 +4,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* subtle depth */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .navbar ul {
-  list-style: none; /* remove bullet points */
-  display: flex;    /* horizontal layout */
+  list-style: none; 
+  display: flex;    
   margin: 0;
   padding: 0;
 }
 
 .logo {
-  color: #e0f7ff; /* lighter tone for better contrast */
+  color: #e0f7ff; 
   margin: 0;
   font-weight: bold;
   font-size: 1.5rem;
@@ -29,20 +29,20 @@
   color: #e0f7ff;
   text-decoration: none;
   font-weight: 500;
-  position: relative; /* for underline positioning */
+  position: relative; 
   transition: transform 0.2s ease;
 }
 
 .navbar a::after {
   content: "";
   position: absolute;
-  left: 50%; /* start from center */
-  bottom: -4px; /* space below text */
+  left: 50%; 
+  bottom: -4px;
   width: 0;
   height: 2px;
   background-color: #e0f7ff;
   transition: all 0.3s ease;
-  transform: translateX(-50%); /* keep centered */
+  transform: translateX(-50%); 
 }
 
 .navbar a:hover {
@@ -50,5 +50,5 @@
 }
 
 .navbar a:hover::after {
-  width: 100%; /* expand to full width */
+  width: 100%; 
 }

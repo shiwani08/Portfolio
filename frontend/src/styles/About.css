@@ -14,11 +14,11 @@
 .tech-marquee {
   overflow: hidden;
   white-space: nowrap;
-  width: 100%;
+  width: 70%;
   position: relative;
   background: rgba(117, 110, 110, 0.15);
   padding: 1rem 0;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
   border-radius: 8px;
 }
 
@@ -80,6 +80,19 @@
   margin: 0 0 0.5rem 0;
   color: #88bfff;
 }
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #82c7ff;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 0 20px rgba(0,162,255,0.5);
+  transform: translateY(-5px);
+}
+
 
 @keyframes marquee {
   0% {
