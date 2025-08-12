@@ -34,7 +34,7 @@ h2 {
 
 .marquee-track {
   display: inline-flex;
-  animation: marquee 40s linear infinite; /* longer duration for smoothness */
+  animation: marquee 70s linear infinite; /* longer duration for smoothness */
   will-change: transform; /* hint for better performance */
 }
 

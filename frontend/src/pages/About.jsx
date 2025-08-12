@@ -9,9 +9,25 @@ import {
   SiHtml5,
   SiCss3,
   SiGit,
-  SiFlutter
+  SiFlutter,
+  SiPython,
+  SiGithub,
 } from "react-icons/si";
 import "../styles/About.css";
+
+const skills = [
+  { icon: <SiJavascript />, name: "JavaScript" },
+  { icon: <SiFlutter />, name: "Flutter" },
+  { icon: <SiPython />, name: "Python" },
+  { icon: <SiReact />, name: "React" },
+  { icon: <SiNodedotjs />, name: "Node.js" },
+  { icon: <SiMongodb />, name: "MongoDB" },
+  { icon: <SiExpress />, name: "Express" },
+  { icon: <SiHtml5 />, name: "HTML" },
+  { icon: <SiCss3 />, name: "CSS" },
+  { icon: <SiGit />, name: "Git" },
+  { icon: <SiGithub />, name: "GitHub" },
+];
 
 export default function About() {
   useEffect(() => {
@@ -54,33 +70,16 @@ export default function About() {
         <h2>Skills</h2>
         <div className="tech-marquee">
           <div className="marquee-track">
-            <div className="tech-item">
-              <SiJavascript /> JavaScript
-            </div>
-            <div className="tech-item">
-              <SiFlutter /> Flutter
-            </div>
-            <div className="tech-item">
-              <SiReact /> React
-            </div>
-            <div className="tech-item">
-              <SiNodedotjs /> Node.js
-            </div>
-            <div className="tech-item">
-              <SiMongodb /> MongoDB
-            </div>
-            <div className="tech-item">
-              <SiExpress /> Express
-            </div>
-            <div className="tech-item">
-              <SiHtml5 /> HTML
-            </div>
-            <div className="tech-item">
-              <SiCss3 /> CSS
-            </div>
-            <div className="tech-item">
-              <SiGit /> Git
-            </div>
+            {skills.concat(skills).map(
+              (
+                skill,
+                index // duplicated for seamless loop
+              ) => (
+                <div className="tech-item" key={index}>
+                  {skill.icon} {skill.name}
+                </div>
+              )
+            )}
           </div>
         </div>
 

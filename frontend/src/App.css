@@ -99,6 +99,27 @@ ul li {
   color: #82e9de; /* aqua hover effect */
 }
 
+/* Scrollbar styling for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(34, 34, 88) #b5c1c9;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
