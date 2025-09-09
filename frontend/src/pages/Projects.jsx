@@ -32,6 +32,16 @@ export default function Projects() {
         <h2 className="project-title">Virtual Mouse</h2>
         <p>Tools & Tech Stack: Python</p>
       </div>
+
+      <div
+        className="project-card"
+        onClick={() =>
+          handleCardClick("https://github.com/shiwani08/URL-Shortner")
+        }
+      >
+        <h2 className="project-title">URL Shortner</h2>
+        <p>Tools & Tech Stack: NodeJS, MongoDB, ExpressJS</p>
+      </div>
     </motion.div>
   );
 }
