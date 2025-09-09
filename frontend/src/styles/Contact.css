@@ -74,3 +74,40 @@
   margin: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the footer always appear at the bottom */
+.contact-container {
+  background: linear-gradient(to top, #000000, #0d1b2a);
+  color: #a8c7ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2.5rem 1rem 1.5rem 1rem;   /* add more top/bottom padding */
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 -3px 10px rgba(0, 162, 255, 0.4);
+  z-index: 15;
+  position: relative;
+}
+
+/* Optional: If you want sticky footer behavior for short pages */
+body, html {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* background: (your choice) */
+}
+
+#root, .main-content-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
